@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* This changes that "awful" green background to a professional soft slate */
+  @apply bg-brand-50 text-slate-900 font-sans antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-brand-50;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-200 rounded-full hover:bg-brand-600 transition-colors;
+}
